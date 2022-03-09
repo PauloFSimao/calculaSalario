@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/frame"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_SalBrut"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_SalBrut"
+        style="@style/estilo_edit" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_dep" />
+
+    <EditText
+        android:id="@+id/edit_NumDep"
+        style="@style/estilo_edit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_Plan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/edit_Plan"
+            style="@style/estilo_edit"
+            android:entries="@array/plano"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poss_valAlim" />
+
+    <RadioGroup
+        android:id="@+id/group_ali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/checkbox_simAlim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_sim"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/checkbox_noAlim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_nao"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poss_valRef" />
+
+    <RadioGroup
+        android:id="@+id/group_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/checkbox_simRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_sim"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/checkbox_noRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_nao"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poss_valTransp" />
+
+    <RadioGroup
+        android:id="@+id/group_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/checkbox_simTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_sim"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/checkbox_noTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opc_nao"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calcular"></Button>
+
+</LinearLayout>

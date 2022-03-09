@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SalarioLiquido</string>
+    <string name="info_SalBrut">Informe o seu Salario Bruto:</string>
+    <string name="info_dep">Informe o numero de Dependentes:</string>
+    <string name="info_Plan">Informe o seu Plano de Saúde:</string>
+    <string name="poss_valTransp">Possui vale transporte?</string>
+    <string name="poss_valRef">Possui vale Refeição?</string>
+    <string name="poss_valAlim">Possui vale alimentação?</string>
+    <string name="opc_sim">Sim</string>
+    <string name="opc_nao">Não</string>
+    <string name="salBrut">Salario Bruto :</string>
+    <string-array name="plano">
+        <item>Standard</item>
+        <item>Basico</item>
+        <item>Super</item>
+        <item>Master</item>
+    </string-array>
+    <string name="Calcular">Calcular</string>
+</resources>

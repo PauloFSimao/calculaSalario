@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultadoActivity">
+
+
+    <TextView
+        android:id="@+id/tv_salbrut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:height="30dp"
+        style="@style/estilo_calculo"
+        android:background="#05CDB0"
+        android:foregroundTint="#F80000"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tv_valAli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        style="@style/estilo_calculo"
+        android:background="#1BFF89"
+        app:layout_constraintTop_toBottomOf="@id/tv_salbrut" />
+
+    <TextView
+        android:id="@+id/tv_valTrans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        style="@style/estilo_calculo"
+        android:background="#05CDB0"
+        app:layout_constraintTop_toBottomOf="@id/tv_valAli" />
+
+    <TextView
+        android:id="@+id/tv_planSau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        style="@style/estilo_calculo"
+        android:background="#1BFF89"
+        app:layout_constraintTop_toBottomOf="@id/tv_valTrans"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tv_valRef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        android:background="#05CDB0"
+        style="@style/estilo_calculo"
+        app:layout_constraintTop_toBottomOf="@id/tv_planSau"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tv_irrf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        style="@style/estilo_calculo"
+        android:background="#1BFF89"
+        app:layout_constraintTop_toBottomOf="@id/tv_valRef"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tv_inss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        style="@style/estilo_calculo"
+        android:background="#05CDB0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_irrf"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tv_salLiq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        android:background="#1BFF89"
+        style="@style/estilo_calculo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inss"
+        tools:layout_editor_absoluteX="-16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
